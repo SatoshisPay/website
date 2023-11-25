@@ -13,7 +13,7 @@ import { Route } from '@/src/js/utils/routes';
 const Intro = () => (
   <Container.FlexCols className="gap-8">
     <Container.FlexCols>
-      <Heading.H1 className="text-3xl">Satoshispay</Heading.H1>
+      <Heading.H1 className="text-3xl">SatoshisPay</Heading.H1>
       <Paragraph.Center className="!text-2xl">
         Accetta pagamenti in <strong>Bitcoin</strong> nella tua attività
       </Paragraph.Center>

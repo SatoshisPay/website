@@ -214,7 +214,7 @@ const Steps = () => (
                     liquidità necessaria per effettuare la transazione.
                     Tuttavia, poiché Breez ha dovuto pagare una commissione per
                     fornire la liquidità, Breez addebiterà al ricevente della
-                    transazione (quindi all&apos;utente di Satoshispay) una
+                    transazione (quindi all&apos;utente di SatoshisPay) una
                     commissione del <strong>0.4%</strong> dell&apos;importo
                     ricevuto, con una commissione minima di{' '}
                     <strong>2500 sats</strong>.

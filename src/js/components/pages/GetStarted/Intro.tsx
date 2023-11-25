@@ -12,7 +12,7 @@ const Intro = () => (
         semplice
       </Heading.H1>
       <Paragraph.Center className="text-lg">
-        Satoshispay è l&apos;app pensata per i commercianti Italiani che
+        SatoshisPay è l&apos;app pensata per i commercianti Italiani che
         vogliono accettare pagamenti in Bitcoin nella propria attività.
       </Paragraph.Center>
       <Paragraph.Center>

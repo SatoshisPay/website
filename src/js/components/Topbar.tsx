@@ -8,7 +8,7 @@ import { Route } from '../utils/routes';
 
 export const MENU_ENTRIES = [
   {
-    name: 'Satoshispay',
+    name: 'SatoshisPay',
     route: Route.HOME,
   },
   {

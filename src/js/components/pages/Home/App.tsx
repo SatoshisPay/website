@@ -23,7 +23,7 @@ const App = () => (
             Seleziona l&apos;importo in euro, ricevi in <strong>Bitcoin</strong>
           </Heading.H3>
           <Paragraph.Leading>
-            Con Satoshispay puoi selezionare l&apos;importo in euro da ricevere
+            Con SatoshisPay puoi selezionare l&apos;importo in euro da ricevere
             e ricevere il pagamento in Bitcoin tramite la tecnologia di
             Lightning Network. Il cambio viene fatto con il tasso di mercato in
             tempo reale.

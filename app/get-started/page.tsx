@@ -7,7 +7,7 @@ import Container from '@/src/js/components/reusable/Container';
 import Intro from '@/src/js/components/pages/GetStarted/Intro';
 import Steps from '@/src/js/components/pages/GetStarted/Steps';
 
-const TITLE = 'Come iniziare ad accettare pagamenti in Bitcoin | Satoshispay';
+const TITLE = 'Come iniziare ad accettare pagamenti in Bitcoin | SatoshisPay';
 const DESCRIPTION =
   'Come iniziare ad accettare pagamenti in Bitcoin nella tua attività tramite la tecnologia di Lightning Network con SatoshisPay';
 
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,
-    siteName: 'Satoshispay',
+    siteName: 'SatoshisPay',
   },
 };
 

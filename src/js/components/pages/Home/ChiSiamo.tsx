@@ -8,7 +8,7 @@ const ChiSiamo = () => (
   <Container.FlexCols className="items-center justify-center">
     <Heading.H2>Chi Siamo</Heading.H2>
     <Paragraph.Leading>
-      Satoshispay è un&apos;applicazione gratuita e open-source sviluppata da{' '}
+      SatoshisPay è un&apos;applicazione gratuita e open-source sviluppata da{' '}
       <strong>Bitcoin</strong> Monfalcone, un&apos;organizzazione no-profit che
       promuove l&apos;adozione di <strong>Bitcoin</strong> nella nostra comunità
       locale. L&apos;applicazione è stata sviluppata con l&apos;obiettivo di

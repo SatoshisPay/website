@@ -13,9 +13,9 @@ import TelegramQr from '@/src/assets/images/telegram-qr.svg';
 import Image from 'next/image';
 import { Route } from '@/src/js/utils/routes';
 
-const TITLE = 'Supporto | Satoshispay';
+const TITLE = 'Supporto | SatoshisPay';
 const DESCRIPTION =
-  'Ottieni support per Satoshispay in pochi minuti contattandoci via email o Telegram.';
+  'Ottieni support per SatoshisPay in pochi minuti contattandoci via email o Telegram.';
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,
-    siteName: 'Satoshispay',
+    siteName: 'SatoshisPay',
   },
 };
 
@@ -44,7 +44,7 @@ const PrivacyPage = () => {
           <Container.Container className="py-4">
             <Heading.H1>Supporto</Heading.H1>
             <Paragraph.Center className="text-xl">
-              Stai riscontrando dei problemi con Satoshispay? Contattaci con uno
+              Stai riscontrando dei problemi con SatoshisPay? Contattaci con uno
               dei metodi sottostanti e ottieni supporto in poche ore.
             </Paragraph.Center>
             <Paragraph.Center>

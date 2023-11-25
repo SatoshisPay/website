@@ -5,7 +5,7 @@ import type { Metadata } from 'next';
 import Page from '@/src/js/components/reusable/Page';
 import Faq from '@/src/js/components/pages/Faq/Faq';
 
-const TITLE = 'Domande frequenti | Satoshispay';
+const TITLE = 'Domande frequenti | SatoshisPay';
 const DESCRIPTION =
   'Come prelevo i miei Bitcoin? | Perché devo fare un deposito di Bitcoin? | Quali sono le commissioni su Lightning Network?';
 
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,
-    siteName: 'Satoshispay',
+    siteName: 'SatoshisPay',
   },
 };
 

@@ -7,8 +7,8 @@ import Heading from '@/src/js/components/reusable/Heading';
 import Paragraph from '@/src/js/components/reusable/Paragraph';
 import Container from '@/src/js/components/reusable/Container';
 
-const TITLE = 'Privacy Policy | Satoshispay';
-const DESCRIPTION = 'Privacy policy di Satoshispay';
+const TITLE = 'Privacy Policy | SatoshisPay';
+const DESCRIPTION = 'Privacy policy di SatoshisPay';
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,
-    siteName: 'Satoshispay',
+    siteName: 'SatoshisPay',
   },
 };
 

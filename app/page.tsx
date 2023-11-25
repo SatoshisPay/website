@@ -8,9 +8,9 @@ import App from '@/src/js/components/pages/Home/App';
 import ChiSiamo from '@/src/js/components/pages/Home/ChiSiamo';
 import Container from '@/src/js/components/reusable/Container';
 
-const TITLE = 'Accetta pagamenti in Bitcoin nella tua attività | Satoshispay';
+const TITLE = 'Accetta pagamenti in Bitcoin nella tua attività | SatoshisPay';
 const DESCRIPTION =
-  "Scopri Satoshispay: l'app gratuita per accettare fin da subito pagamenti in bitcoin nella tua attività tramite la tecnologia di Lightning Network";
+  "Scopri SatoshisPay: l'app gratuita per accettare fin da subito pagamenti in bitcoin nella tua attività tramite la tecnologia di Lightning Network";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,
-    siteName: 'Satoshispay',
+    siteName: 'SatoshisPay',
   },
 };
 
