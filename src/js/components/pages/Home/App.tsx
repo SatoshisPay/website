@@ -41,8 +41,7 @@ const App = () => (
           <Paragraph.Leading>
             Una volta confermato l&apos;importo, l&apos;app genererà un QR code
             che il cliente potrà scannerizzare con il suo wallet Bitcoin
-            preferito. In pochi secondi riceverai i Bitcoin sul tuo wallet. In
-            pochi secondi riceverai i Bitcoin sul tuo wallet.
+            preferito. In pochi secondi riceverai i Bitcoin sul tuo wallet.
           </Paragraph.Leading>
         </Container.Container>
       </Container.Flex>
@@ -56,8 +55,8 @@ const App = () => (
           </Heading.H3>
           <Paragraph.Leading>
             Una volta ricevuti i Bitcoin, puoi trasferirli sul tuo cold wallet
-            per una maggiore sicurezza. Inoltre puoi decidere di tenere i
-            Bitcoin ricevuti e aspettare che il loro valore aumenti.
+            per una maggiore sicurezza, oppure puoi spenderli presso altri
+            esercenti che accettano Bitcoin.
           </Paragraph.Leading>
         </Container.Container>
       </Container.FlexRow>

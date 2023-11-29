@@ -62,7 +62,7 @@ const Footer = () => {
             Telegram
           </Link.Default>
           <Link.Default
-            href="https://github.com/veeso-dev/satoshispay"
+            href="https://github.com/SatoshisPay/satoshispay"
             target="_blank"
           >
             Github

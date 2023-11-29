@@ -27,7 +27,7 @@ const Socials = () => (
     </a>
     <a
       className="block"
-      href="https://github.com/veeso-dev/satoshispay"
+      href="https://github.com/SatoshisPay/satoshispay"
       target="_blank"
     >
       <Github fill="#ffffff" width={24} height={24} />
