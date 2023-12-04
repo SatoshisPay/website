@@ -7,6 +7,7 @@ import Intro from '@/src/js/components/pages/Home/Intro';
 import App from '@/src/js/components/pages/Home/App';
 import ChiSiamo from '@/src/js/components/pages/Home/ChiSiamo';
 import Container from '@/src/js/components/reusable/Container';
+import Hero from '@/src/js/components/pages/Home/Intro/Hero';
 
 const TITLE = 'Accetta pagamenti in Bitcoin nella tua attività | SatoshisPay';
 const DESCRIPTION =
@@ -35,8 +36,9 @@ const Home = () => {
         data-website-id="b4343ca0-5b4d-425b-984a-3aad3b411a02"
       />
       <Page.BlankPage>
+        <Hero />
         <Page.Body>
-          <Container.FlexCols className="gap-8">
+          <Container.FlexCols className="gap-8 py-8">
             <Intro />
             <App />
             <ChiSiamo />

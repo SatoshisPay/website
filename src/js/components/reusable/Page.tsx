@@ -22,7 +22,7 @@ const BrandPage = (props: React.HTMLProps<HTMLDivElement>) => {
 };
 
 const Body = (props: React.HTMLProps<HTMLDivElement>) => (
-  <Container.Container className="w-page sm:w-full mx-auto bg-inherit">
+  <Container.Container className="w-page sm:w-full mx-auto bg-inherit mt-[80px]">
     {props.children}
   </Container.Container>
 );

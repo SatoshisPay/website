@@ -196,6 +196,23 @@ const Faq = () => (
         <Accordion
           title={
             <Heading.H2 className="text-xl pt-4">
+              SatoshisPay è no-custodial?
+            </Heading.H2>
+          }
+        >
+          <Container.Container>
+            <Paragraph.Leading>
+              SatoshisPay è <strong>no-custodial</strong>. Non c&apos;è nessun
+              ente terzo che custodisce i tuoi fondi, hai il{' '}
+              <strong>pieno controllo</strong> del tuo wallet.
+            </Paragraph.Leading>
+          </Container.Container>
+        </Accordion>
+      </Container.Container>
+      <Container.Container className="border-t border-gray-200 p-2">
+        <Accordion
+          title={
+            <Heading.H2 className="text-xl pt-4">
               SatoshisPay è gratuita?
             </Heading.H2>
           }

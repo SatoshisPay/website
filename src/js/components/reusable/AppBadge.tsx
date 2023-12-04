@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Container from './Container';
 
 import GooglePlayBadge from '@/src/assets/images/it_badge_web_generic.webp';
+import ApkBadge from '@/src/assets/images/apk_badge.webp';
 // import AppStoreBadge from '@/src/assets/images/appstore.webp';
 
 interface Props {
@@ -19,7 +20,20 @@ const AppBadge = ({ containerClassName }: Props) => (
     >
       <Image
         src={GooglePlayBadge}
-        alt="google play badge"
+        alt="scarica da google play"
+        width="200"
+        height="100"
+      />
+    </a>
+    <a
+      className="block hover:underline text-xl"
+      href="https://github.com/SatoshisPay/satoshispay/releases/latest/download/app-release.apk"
+      target="_blank"
+    >
+      <Image
+        src={ApkBadge}
+        className="border border-gray-400 rounded-lg"
+        alt="scarica apk"
         width="200"
         height="100"
       />

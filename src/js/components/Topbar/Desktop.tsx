@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as Icon from 'react-feather';
-import { useRouter } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation';
 import Image from 'next/image';
 
 import Container from '../reusable/Container';
@@ -12,14 +12,40 @@ import Socials from './Socials';
 import Submenu from './Submenu';
 
 const Desktop = () => {
+  const [scrollPosition, setScrollPosition] = React.useState({ x: 0, y: 0 });
+
   const router = useRouter();
+  const pathname = usePathname();
+
+  const scrollingProps =
+    scrollPosition.y > 0 || pathname !== '/'
+      ? 'bg-brand shadow-lg'
+      : 'bg-transparent';
 
   const goHome = () => {
     router.push(Route.url(Route.HOME));
   };
 
+  const handleScroll = () => {
+    setScrollPosition({ x: window.scrollX, y: window.scrollY });
+  };
+
+  React.useEffect(() => {
+    if (typeof window === 'undefined') return;
+    // Add scroll event listener when component mounts
+    window.addEventListener('scroll', handleScroll);
+
+    // Remove scroll event listener when component unmounts
+    return () => {
+      if (typeof window === 'undefined') return;
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <Container.FlexRow className="sm:hidden fixed bg-brand text-white items-center gap-8 justify-center left-0 py-2 px-1 top-0 w-screen h-[80px] z-40 shadow-lg">
+    <Container.FlexRow
+      className={`${scrollingProps} sm:hidden fixed text-white items-center gap-8 justify-center left-0 py-2 px-1 top-0 w-screen h-[80px] z-40`}
+    >
       <Container.FlexRow className="w-page justify-between items-center h-full gap-4">
         <Container.FlexRow>
           <Container.Flex className="items-center px-4">

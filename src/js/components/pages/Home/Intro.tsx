@@ -7,56 +7,13 @@ import Card from './Intro/Card';
 import Image from 'next/image';
 
 import BitcoinImg from '@/src/assets/images/bitcoin.webp';
-import Link from '../../reusable/Link';
-import { Route } from '@/src/js/utils/routes';
 
 const Intro = () => (
   <Container.FlexCols className="gap-8">
-    <Container.FlexCols>
-      <Heading.H1 className="text-3xl">SatoshisPay</Heading.H1>
-      <Paragraph.Center className="!text-2xl">
-        Accetta pagamenti in <strong>Bitcoin</strong> nella tua attività
-      </Paragraph.Center>
-
-      <Container.Container className="grid grid-cols-3 sm:grid-cols-1 gap-8">
-        <Card title={'No Custodial'}>
-          <Paragraph.Center>
-            Nessun ente terzo che custodisce i tuoi fondi, hai il{' '}
-            <strong>pieno controllo</strong> del tuo portafoglio.
-          </Paragraph.Center>
-        </Card>
-        <Card title={'Zero Commissioni'}>
-          <>
-            <Paragraph.Center>
-              <strong>Nessuna commissione</strong> di transazione, nessuna
-              commissione di gestione*.
-            </Paragraph.Center>
-            <Paragraph.Center className="text-xs text-text">
-              *Solo nel caso il ricevente non abbia nel portafoglio una quantità
-              di bitcoin uguale o maggiore all&apos;importo, è prevista una
-              commissione del 0.4% sull&apos;importo ricevuto, con un minimo di
-              2500 sats,
-            </Paragraph.Center>
-          </>
-        </Card>
-        <Card title={'Open Source e No-Profit'}>
-          <Paragraph.Center>
-            La nostra app è <strong>open-source</strong>: chiunque può leggere
-            il nostro codice e verificare che cosa fa la nostra app con i soldi
-            degli utenti.
-          </Paragraph.Center>
-        </Card>
-      </Container.Container>
-      <Container.FlexCols className="items-center justify-center mt-4">
-        <Link.Button href={Route.url(Route.GET_STARTED)}>
-          Comincia subito
-        </Link.Button>
-      </Container.FlexCols>
-    </Container.FlexCols>
     <Container.FlexCols className="gap-4">
       <Container.FlexRow className="items-center justify-center gap-4">
         <Image src={BitcoinImg} alt="bitcoin logo" width={48} height={48} />
-        <Heading.H2>
+        <Heading.H2 className="text-2xl sm:text-xl">
           Perché adottare <strong>Bitcoin</strong> come metodo di pagamento?
         </Heading.H2>
       </Container.FlexRow>

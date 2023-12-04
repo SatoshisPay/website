@@ -8,7 +8,7 @@ interface Props {
 }
 
 const Card = ({ title, children }: Props) => (
-  <Container.Card className="bg-white sm:bg-transparent">
+  <Container.Card className="bg-white">
     <Container.FlexCols className="items-center justify-center">
       <Container.Container>
         <Heading.H2 className="!text-xl text-brandAlt text-center">
