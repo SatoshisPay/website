@@ -84,9 +84,9 @@ const Mobile = () => {
         >
           <Link.RouterLink
             className="!py-4 w-full"
-            to={Route.url(Route.ROADMAP)}
+            to={Route.url(Route.WHITEPAPER)}
           >
-            Roadmap
+            Whitepaper
           </Link.RouterLink>
           <Link.NavLink
             className="!py-4  w-full"

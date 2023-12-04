@@ -3,8 +3,8 @@ export enum Route {
   GET_STARTED = 'get-started',
   HOME = 'home',
   PRIVACY = 'privacy',
-  ROADMAP = 'roadmap',
   SUPPORT = 'support',
+  WHITEPAPER = 'whitepaper',
 }
 
 // eslint-disable-next-line @typescript-eslint/no-namespace
