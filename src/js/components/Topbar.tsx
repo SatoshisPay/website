@@ -4,30 +4,6 @@ import * as React from 'react';
 
 import Desktop from './Topbar/Desktop';
 import Mobile from './Topbar/Mobile';
-import { Route } from '../utils/routes';
-
-export const MENU_ENTRIES = [
-  {
-    name: 'SatoshisPay',
-    route: Route.HOME,
-  },
-  {
-    name: 'Inizia da qui',
-    route: Route.GET_STARTED,
-  },
-  {
-    name: 'Guida',
-    route: Route.FAQ,
-  },
-  {
-    name: 'Supporto',
-    route: Route.SUPPORT,
-  },
-  {
-    name: 'Bitcoin Monfalcone',
-    url: 'https://bitcoinmonfalcone.it',
-  },
-];
 
 const Topbar = () => (
   <header>

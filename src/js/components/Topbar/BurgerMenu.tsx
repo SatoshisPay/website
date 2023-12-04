@@ -32,7 +32,7 @@ const BurgerMenu = (props: Props) => {
           hidden ? 'hidden' : ''
         } animate__animated animate__faster ${
           props.isOpen ? 'animate__slideInRight' : 'animate__slideOutRight'
-        } top-0 left-0 h-screen bg-brand text-brandLight w-screen flex-col justify-start items-center`}
+        } top-0 left-0 min-h-screen h-max bg-brand text-brandLight w-screen flex-col justify-start items-center overflow-y-auto`}
       >
         <div className="flex flex-row justify-end items-end w-full">
           <div
@@ -46,7 +46,7 @@ const BurgerMenu = (props: Props) => {
             />
           </div>
         </div>
-        <div className="flex flex-col justify-start items-center w-full gap-4">
+        <div className="flex flex-col justify-start items-center w-full h-full">
           {props.children}
         </div>
       </div>

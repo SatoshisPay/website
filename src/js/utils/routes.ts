@@ -3,6 +3,7 @@ export enum Route {
   GET_STARTED = 'get-started',
   HOME = 'home',
   PRIVACY = 'privacy',
+  ROADMAP = 'roadmap',
   SUPPORT = 'support',
 }
 

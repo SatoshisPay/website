@@ -7,7 +7,7 @@ import Telegram from '../reusable/icons/Telegram';
 import Github from '../reusable/icons/Github';
 
 const Socials = () => (
-  <Container.FlexRow className="justify-around items-center gap-8">
+  <Container.FlexRow className="justify-around items-center gap-8 w-full">
     <a
       className="block"
       href="https://www.instagram.com/bitcoin.monfalcone/"
