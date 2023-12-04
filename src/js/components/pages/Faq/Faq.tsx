@@ -9,6 +9,7 @@ import Accordion from '../../reusable/Accordion';
 import WalletScreenshot from '@/src/assets/images/app-screen-wallet.webp';
 import SettingsScreenshot from '@/src/assets/images/app-screen-settings.webp';
 import FactoryResetScreenshot from '@/src/assets/images/app-screen-factory.webp';
+import HistoryScreenshot from '@/src/assets/images/app-screen-history.webp';
 
 import Device from '../../reusable/Device';
 import Donate from '../../shared/Donate';
@@ -190,6 +191,43 @@ const Faq = () => (
               <strong>Come ripristino SatoshisPay?</strong>.
             </Paragraph.Leading>
           </Container.Container>
+        </Accordion>
+      </Container.Container>
+      <Container.Container className="border-t border-gray-200 p-2">
+        <Accordion
+          title={
+            <Heading.H2 className="text-xl pt-4">
+              Ho per sbaglio accettato una transazione poi cancellata. Come la
+              rimuovo dalla cronologia?
+            </Heading.H2>
+          }
+        >
+          <Paragraph.Leading>
+            La transazione risulterà in attesa per 24 ore, al termine delle
+            quali, se non avrà effettivamente ricevuto un incasso, verrà
+            cancellata automaticamente dall&apos;app.
+          </Paragraph.Leading>
+        </Accordion>
+      </Container.Container>
+      <Container.Container className="border-t border-gray-200 p-2">
+        <Accordion
+          title={
+            <Heading.H2 className="text-xl pt-4">
+              Come faccio ad esportare le transazioni?
+            </Heading.H2>
+          }
+        >
+          <Paragraph.Leading>
+            Per esportare le transazioni, sarà sufficiente andare nella pagina{' '}
+            <strong>&quot;Transazioni&quot;</strong> cliccando sull&apos; icona{' '}
+            <Icon.Clock size={24} className="inline" />. Da qui sarà possibile
+            selezionare le date di inizio e fine periodo per cui si vogliono
+            esportare le transazioni. Quindi cliccare su{' '}
+            <strong>&quot;Scarica CSV&quot;</strong>e verrà scaricato un file
+            CSV con tutte le transazioni del periodo selezionato nella cartella
+            Documenti del vostro dispositivo.
+          </Paragraph.Leading>
+          <Device.IPhone alt="wallet screenshot" image={HistoryScreenshot} />
         </Accordion>
       </Container.Container>
       <Container.Container className="border-t border-gray-200 p-2">
