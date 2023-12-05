@@ -22,6 +22,7 @@ const Footer = () => {
           <Link.Default href={Route.GET_STARTED}>
             Inizia ad usare SatoshisPay
           </Link.Default>
+          <Link.Default href={Route.MAP}>Dove pagare in Bitcoin</Link.Default>
           <Link.Default href={Route.FAQ}>Domande Frequenti</Link.Default>
           <Link.Default href={Route.SUPPORT}>Supporto</Link.Default>
           <Link.Default href={Route.PRIVACY}>Privacy Policy</Link.Default>
@@ -60,6 +61,9 @@ const Footer = () => {
           </Link.Default>
           <Link.Default href="https://t.me/BitcoinMonfalcone" target="_blank">
             Telegram
+          </Link.Default>
+          <Link.Default href="https://t.me/+7n_enM4sRA05MmQ0" target="_blank">
+            Telegram (supporto)
           </Link.Default>
           <Link.Default
             href="https://github.com/SatoshisPay/satoshispay"

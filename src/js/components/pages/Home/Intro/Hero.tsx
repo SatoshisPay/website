@@ -18,7 +18,7 @@ const Hero = () => {
         image={'/img/hero-bg.webp'}
         className="w-screen min-h-screen h-auto"
       >
-        <Container.Flex className="text-white bg-brand/40 min-h-screen h-full justify-center items-center py-24 sm:py-4 m-auto w-full text-center">
+        <Container.Flex className="text-white bg-brand/40 min-h-screen h-full justify-center items-center py-24 sm:py-[80x] m-auto w-full text-center">
           <Container.FlexCols className="gap-8 w-page">
             <Container.FlexCols>
               <Heading.H1 className="text-3xl sm:text-2xl text-white">

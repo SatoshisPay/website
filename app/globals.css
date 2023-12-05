@@ -88,3 +88,9 @@ strong {
   color: #f7931a;
   font-weight: 700;
 }
+
+.map-screen {
+  margin-top: 80px;
+  height: calc(100vh - 80px);
+  width: 100%;
+}

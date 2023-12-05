@@ -127,6 +127,10 @@ const Desktop = () => {
                 Bitcoin Monfalcone
               </Link.NavLink>
             </Submenu>
+            <Link.RouterLink to={Route.url(Route.MAP)}>
+              <Icon.MapPin className="inline mr-2" size={24} />
+              Dove spendere
+            </Link.RouterLink>
           </nav>
         </Container.FlexRow>
         <Container.Flex className="justify-self-end">

@@ -19,9 +19,19 @@ const Mobile = () => {
   const router = useRouter();
   const [lastPathname, setLastPathname] = React.useState(pathname);
   const [isOpen, setIsOpen] = React.useState(false);
+  const [scrollPosition, setScrollPosition] = React.useState({ x: 0, y: 0 });
+
+  const scrollingProps =
+    scrollPosition.y > 0 || pathname !== '/'
+      ? 'bg-brand shadow-lg'
+      : 'bg-transparent';
 
   const goHome = () => {
     router.push(Route.url(Route.HOME));
+  };
+
+  const handleScroll = () => {
+    setScrollPosition({ x: window.scrollX, y: window.scrollY });
   };
 
   React.useEffect(() => {
@@ -32,8 +42,22 @@ const Mobile = () => {
     }
   }, [pathname, lastPathname]);
 
+  React.useEffect(() => {
+    if (typeof window === 'undefined') return;
+    // Add scroll event listener when component mounts
+    window.addEventListener('scroll', handleScroll);
+
+    // Remove scroll event listener when component unmounts
+    return () => {
+      if (typeof window === 'undefined') return;
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="h-[80px] items-center bg-brand hidden sm:flex left-0 gap-4 justify-start py-2 px-4 absolute top-0 w-full z-40 shadow-lg">
+    <div
+      className={`${scrollingProps} h-[80px] z-50 items-center hidden sm:flex left-0 gap-4 justify-start py-2 px-8 fixed top-0 w-full`}
+    >
       <Container.Flex className="flex-1">
         <Image
           src={Logo}
@@ -113,6 +137,10 @@ const Mobile = () => {
             Bitcoin Monfalcone
           </Link.NavLink>
         </Submenu>
+        <Link.RouterLink to={Route.url(Route.MAP)}>
+          <Icon.MapPin className="inline mr-2" size={24} />
+          Dove spendere
+        </Link.RouterLink>
         <Hr />
         <Socials />
       </BurgerMenu>
