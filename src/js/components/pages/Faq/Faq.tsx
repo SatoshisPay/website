@@ -80,7 +80,7 @@ const Faq = () => (
         <Accordion
           title={
             <Heading.H2 className="text-xl pt-4">
-              Come prelevo i miei Bitcoin?
+              Come prelevo o pago utilizzando i miei Bitcoin?
             </Heading.H2>
           }
         >
@@ -90,11 +90,12 @@ const Faq = () => (
             </Container.Container>
             <Container.Container className="flex-1">
               <Paragraph.Leading>
-                Per prelevare i Bitcoin dall&apos;app satoshispay ad un
-                portafogli bitcoin esterno, sarà sufficiente andare nella pagina{' '}
-                <strong>Wallet</strong> - <strong>Prelievo</strong> e inserire
-                l&apos;indirizzo del portafogli esterno e la quantità di Bitcoin
-                che si vuole prelevare.
+                Per prelevare o fare pagamenti in Bitcoin dall&apos;app
+                satoshispay ad un portafogli bitcoin esterno, sarà sufficiente
+                andare nella pagina <strong>Wallet</strong> -{' '}
+                <strong>Invia</strong> e inserire l&apos;indirizzo del
+                portafogli esterno e la quantità di Bitcoin che si vuole
+                prelevare.
               </Paragraph.Leading>
               <Paragraph.Leading>
                 È anche possibile scannerizzare un codice QR di un indirizzo{' '}
@@ -140,8 +141,8 @@ const Faq = () => (
                   come per esempio in caso di smarrimento del PIN per effetuare
                   prelievi o compromissione della sicurezza, sarà sufficiente
                   andare nella pagina <strong>Impostazioni</strong> cliccando
-                  sull&apos;icona <Icon.Settings size={24} className="inline" />
-                  .
+                  sull&apos;icona{' '}
+                  <Icon.MoreVertical size={24} className="inline" />.
                 </Paragraph.Leading>
                 <Paragraph.Leading>
                   Quindi cliccare su{' '}
