@@ -1,6 +1,6 @@
 # SatoshisPay
 
-[![Frontend](https://github.com/SatoshisPay/satoshispay/actions/workflows/frontend.yml/badge.svg)](https://github.com/SatoshisPay/website/actions/workflows/frontend.yml)
+[![Frontend](https://github.com/SatoshisPay/website/actions/workflows/frontend.yml/badge.svg)](https://github.com/SatoshisPay/website/actions/workflows/frontend.yml)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white)](https://conventionalcommits.org)
 
 ## Description
