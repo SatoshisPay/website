@@ -10,6 +10,8 @@ import WalletScreenshot from '@/src/assets/images/app-screen-wallet.webp';
 import SettingsScreenshot from '@/src/assets/images/app-screen-settings.webp';
 import FactoryResetScreenshot from '@/src/assets/images/app-screen-factory.webp';
 import HistoryScreenshot from '@/src/assets/images/app-screen-history.webp';
+import MoonpayScreenshot from '@/src/assets/images/app-screen-moonpay.webp';
+import BuyBitcoinScreenshot from '@/src/assets/images/app-screen-btc-providers.webp';
 
 import Device from '../../reusable/Device';
 import Donate from '../../shared/Donate';
@@ -225,10 +227,68 @@ const Faq = () => (
             selezionare le date di inizio e fine periodo per cui si vogliono
             esportare le transazioni. Quindi cliccare su{' '}
             <strong>&quot;Scarica CSV&quot;</strong>e verrà scaricato un file
-            CSV con tutte le transazioni del periodo selezionato nella cartella
-            Documenti del vostro dispositivo.
+            CSV con tutte le transazioni del periodo selezionato nella cartella{' '}
+            <strong>Download</strong> del vostro dispositivo.
           </Paragraph.Leading>
           <Device.IPhone alt="wallet screenshot" image={HistoryScreenshot} />
+        </Accordion>
+      </Container.Container>
+      <Container.Container className="border-t border-gray-200 p-2">
+        <Accordion
+          title={
+            <Heading.H2 className="text-xl pt-4">
+              È possibile acquistare Bitcoin direttamente da SatoshisPay?
+            </Heading.H2>
+          }
+        >
+          <Container.Container>
+            <Container.FlexCols className="gap-8">
+              <Container.Flex className="flex-row sm:flex-col-reverse">
+                <Container.Container className="flex-1">
+                  <Device.IPhone
+                    alt="settings screenshot"
+                    image={SettingsScreenshot}
+                  />
+                </Container.Container>
+                <Paragraph.Leading className="flex-1">
+                  Sì, è possibile acquistare Bitcoin direttamente da
+                  SatoshisPay. Per farlo è sufficiente recarsi nella pagina{' '}
+                  <strong>
+                    <Icon.MoreVertical className="inline" />
+                    Altro
+                  </strong>{' '}
+                  e cliccare su <strong>Acquista Bitcoin</strong>.
+                </Paragraph.Leading>
+              </Container.Flex>
+              <Container.Flex className="flex-row sm:flex-col-reverse">
+                <Container.Container className="flex-1">
+                  <Device.IPhone
+                    alt="buy bitcoin screenshot"
+                    image={BuyBitcoinScreenshot}
+                  />
+                </Container.Container>
+                <Paragraph.Leading className="flex-1">
+                  A questo punto verrai reindirizzato alla pagina di selezione
+                  della piattaforma da cui acquistare Bitcoin. Clicca su quella
+                  che preferisci.
+                </Paragraph.Leading>
+              </Container.Flex>
+              <Container.Flex className="flex-row sm:flex-col-reverse">
+                <Container.Container className="flex-1">
+                  <Device.IPhone
+                    alt="buy bitcoin screenshot"
+                    image={MoonpayScreenshot}
+                  />
+                </Container.Container>
+                <Paragraph.Leading className="flex-1">
+                  Una volta selezionata la piattaforma, verrai reindirizzato al
+                  sito della piattaforma scelta per completare l&apos;acquisto.
+                  Una volta completato l&apos;acquisto, i Bitcoin verranno
+                  inviati al tuo wallet.
+                </Paragraph.Leading>
+              </Container.Flex>
+            </Container.FlexCols>
+          </Container.Container>
         </Accordion>
       </Container.Container>
       <Container.Container className="border-t border-gray-200 p-2">
